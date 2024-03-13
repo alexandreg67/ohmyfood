@@ -3,3 +3,51 @@
   margin: 0;
   padding: 0;
 }
+
+$text-color: #353535;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+
+    display: flex;
+    width: 100%;
+    height: 63px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    position: relative;
+    
+    img {
+        height: 36px;
+    }
+
+    .fleche-retour {
+        position: absolute;
+        left: 17px;
+        top: 17px;
+        height: 30px;
+        width: 30px;
+        display: none;
+    }
+}
+
+.location {
+    width: 100%;
+    height: 50px;
+    color: $text-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAEAEA;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+    .pin-icon {
+        height: 16px;
+        width: 12px;
+        color: $text-color;
+        margin-right: 17px;
+    }
+}
