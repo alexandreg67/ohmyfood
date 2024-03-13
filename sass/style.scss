@@ -51,3 +51,44 @@ header {
         margin-right: 17px;
     }
 }
+
+.accueil {
+
+    &__text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            margin-top: 39px;
+            text-align:center;
+            width: 275px;
+            height: 68px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        h2 {
+            text-align: center;
+            width: 315px;
+            font-size: 18px;
+            font-weight: 300;
+            color: $text-color;
+        }
+    }
+
+    &__btn {
+        color: #FFFFFF;
+        text-align: center;
+        line-height: 50px;
+        text-decoration: none;
+        margin: 27px auto 57px;
+        width: 218px;
+        height: 50px;
+        font-size: 16px;
+        font-weight: 500;
+        background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        border-radius: 25px;
+    }
+}
