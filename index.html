@@ -44,26 +44,29 @@
           </div>
         </section>
         
-        <section class="Fonctionnement">
-          <div class="text-container">
+        <section class="fonctionnement">
+          <div class="fonctionnement__text-container">
             <h3>Fonctionnement</h3>
             
-            <menu>
+            <menu class="fonctionnement__menu">
               <li>
+                <div class="fonctionnement__menu__number">1</div>
                 <button>
-                  <i></i>
+                  <i class="fa-solid fa-mobile-screen-button"></i>
                   Choisissez un restaurant
                 </button>
               </li>
               <li>
+                <div class="fonctionnement__menu__number">2</div>
                 <button>
-                  <i></i>
+                  <i class="fa-solid fa-list-ul"></i>
                   Choisissez un restaurant
                 </button>
               </li>
               <li>
+                <div class="fonctionnement__menu__number">3</div>
                 <button>
-                  <i></i>
+                  <i class="fa-solid fa-store"></i>
                   Choisissez un restaurant
                 </button>
               </li>
@@ -71,21 +74,37 @@
           </div>
         </section>
         
-        <section>
-          <div class="text-container">
-            <h3>Fonctionnement</h3>
+        <section class="restaurants">
+            <h3>Restaurants</h3>
             
-            <div class="card-list">
-              <article>
+            <div class="restaurants__list">
+              <article class="restaurants__card">
                 <div>
-                  <span>Nouveau</span>
-                  <img src="" alt="">
+                  <span class="new">Nouveau</span>
+                  <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image restaurant la palette du gout">
                 </div>
                 
-                <div class="card-bottom">
+                <div class="restaurants__card__bottom">
                   <div class="card-text">
                     <h4>La palette du goût</h4>
-                    <span>Ménilmontant</span>
+                    <p>Ménilmontant</p>
+                  </div>
+                  <button class="card-heart">
+                    <i></i>
+                  </button>
+                </div>
+              </article>
+
+              <article class="restaurants__card">
+                <div>
+                  <span class="new">Nouveau</span>
+                  <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image restaurant la palette du gout">
+                </div>
+                
+                <div class="restaurants__card__bottom">
+                  <div class="card-text">
+                    <h4>La palette du goût</h4>
+                    <p>Ménilmontant</p>
                   </div>
                   <button class="card-heart">
                     <i></i>
@@ -93,7 +112,6 @@
                 </div>
               </article>
             </div>
-          </div>
         </section>
 
       </main>

@@ -14,7 +14,8 @@ header {
 
     display: flex;
     width: 100%;
-    height: 63px;
+    padding: 1em 0;
+    // height: 63px;
     justify-content: center;
     align-items: center;
     background-color: #FFFFFF;
@@ -36,7 +37,8 @@ header {
 
 .location {
     width: 100%;
-    height: 50px;
+    // height: 50px;
+    padding: 1em 0;
     color: $text-color;
     display: flex;
     justify-content: center;
@@ -63,16 +65,18 @@ header {
         h1 {
             margin-top: 39px;
             text-align:center;
-            width: 275px;
-            height: 68px;
+            padding: 0 50px 20px;
+            // width: 275px;
+            // height: 68px;
             font-size: 24px;
             font-weight: 700;
         }
 
         h2 {
             text-align: center;
-            width: 315px;
-            font-size: 18px;
+            // width: 315px;
+            padding: 0 1.5em;
+            font-size: 1.125em;
             font-weight: 300;
             color: $text-color;
         }
@@ -84,11 +88,137 @@ header {
         line-height: 50px;
         text-decoration: none;
         margin: 27px auto 57px;
-        width: 218px;
-        height: 50px;
-        font-size: 16px;
+        // width: 218px;
+        // height: 50px;
+        padding: 0 1.2em;
+        font-size: 1em;
         font-weight: 500;
         background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
         border-radius: 25px;
     }
+}
+
+.fonctionnement {
+    // height: 440px;
+    background-color: #FFFFFF;
+    padding: 20px;
+
+    &__text-container{
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            font-weight: 700;
+            font-size: 1.5em;
+            margin-bottom: 26px;
+        }
+    }
+
+    &__menu {
+        
+        li {
+            width: 335px;
+            height: 72.38px;
+            border-radius: 20px;
+            list-style-type: none;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        &__number {
+            z-index: 1;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+            border-radius: 9999px;
+            background-color: #9356DC;
+        }
+
+        button {
+            position: relative;
+            font-size: 1em;
+            font-weight: 500;
+            margin-left: 12.51px;
+            padding: 1.75em;
+            // height: 72.38px;
+            width: 100%;
+            max-width: 322.49px;
+            border: none;
+            border-radius: 20px;
+            background-color: #F6F6F6;
+            box-shadow: 0px 4px 15px 0px #00000026;
+
+            i {
+                position: absolute;
+                left: 40px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: #7E7E7E;
+                ;
+            }
+        }
+    }
+}
+
+.restaurants {
+
+    h3 {
+        font-weight: 700;
+        font-size: 1.5em;
+        margin-bottom: 26px;
+    }
+
+    padding: 20px;
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border-radius: 15px;
+
+            .new {
+                color: #FFFFFF;
+                background-color: #99E2D0;
+                width: 80px;
+                height: 30px;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+
+            &__bottom {
+
+                h4 {
+                    font-size: 1.125em;
+                    font-weight: 700;
+                    padding-top: 1em;
+                }
+
+                p {
+                    font-size: 1em;
+                    font-weight: 300;
+                    padding-bottom: 1em;
+                }
+            }
+        }
 }
