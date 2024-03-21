@@ -56,6 +56,8 @@ header {
 
 .accueil {
 
+    background: #F6F6F6;
+
     &__text-container {
         display: flex;
         flex-direction: column;
@@ -101,7 +103,7 @@ header {
 .fonctionnement {
     // height: 440px;
     background-color: #FFFFFF;
-    padding: 20px;
+    padding: 3rem 1.5rem;
 
     &__text-container{
         display: flex;
@@ -169,17 +171,18 @@ header {
 
 .restaurants {
 
+    background: #F6F6F6;
+    padding: 3rem 1.5rem;
+
     h3 {
         font-weight: 700;
         font-size: 1.5em;
         margin-bottom: 26px;
     }
-
-    padding: 20px;
-
         &__list {
             display: flex;
             flex-direction: column;
+            gap: 1.5em;
         }
 
         &__card {
@@ -188,15 +191,20 @@ header {
             flex-direction: column;
             width: 100%;
             border-radius: 15px;
+            background-color: #FFFFFF;
+            
 
             .new {
+                display: inline-block;
                 color: #FFFFFF;
                 background-color: #99E2D0;
                 width: 80px;
                 height: 30px;
                 position: absolute;
-                top: 10px;
-                right: 10px;
+                top: 13px;
+                right: 12px;
+                text-align: center;
+                line-height: 30px;
             }
 
             img {
@@ -208,10 +216,16 @@ header {
 
             &__bottom {
 
+                display: flex;
+                justify-content: space-between;
+                padding-left: 1em;
+                padding-right: 1em;
+
                 h4 {
                     font-size: 1.125em;
                     font-weight: 700;
                     padding-top: 1em;
+                    padding-bottom: 0.3em;
                 }
 
                 p {
@@ -219,6 +233,29 @@ header {
                     font-weight: 300;
                     padding-bottom: 1em;
                 }
+
+                button {
+                    width: 22px;
+                    height: 21px;
+                    margin-right: 1em;
+                    margin-top: 2em;
+                    border: none;
+                    background: transparent;
+                }
+
+                img {
+                    border-top-left-radius: 0px;
+                    border-top-right-radius: 0px;
+                }
+
             }
         }
+}
+
+footer {
+    background: #353535;
+
+    img {
+        color: #FFFFFF;
+    }
 }

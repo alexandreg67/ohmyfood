@@ -46,6 +46,9 @@ header .fleche-retour {
   margin-right: 17px;
 }
 
+.accueil {
+  background: #F6F6F6;
+}
 .accueil__text-container {
   display: flex;
   flex-direction: column;
@@ -81,7 +84,7 @@ header .fleche-retour {
 
 .fonctionnement {
   background-color: #FFFFFF;
-  padding: 20px;
+  padding: 3rem 1.5rem;
 }
 .fonctionnement__text-container {
   display: flex;
@@ -137,7 +140,8 @@ header .fleche-retour {
 }
 
 .restaurants {
-  padding: 20px;
+  background: #F6F6F6;
+  padding: 3rem 1.5rem;
 }
 .restaurants h3 {
   font-weight: 700;
@@ -147,6 +151,7 @@ header .fleche-retour {
 .restaurants__list {
   display: flex;
   flex-direction: column;
+  gap: 1.5em;
 }
 .restaurants__card {
   position: relative;
@@ -154,15 +159,19 @@ header .fleche-retour {
   flex-direction: column;
   width: 100%;
   border-radius: 15px;
+  background-color: #FFFFFF;
 }
 .restaurants__card .new {
+  display: inline-block;
   color: #FFFFFF;
   background-color: #99E2D0;
   width: 80px;
   height: 30px;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 13px;
+  right: 12px;
+  text-align: center;
+  line-height: 30px;
 }
 .restaurants__card img {
   width: 100%;
@@ -170,15 +179,41 @@ header .fleche-retour {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
+.restaurants__card__bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1em;
+  padding-right: 1em;
+}
 .restaurants__card__bottom h4 {
   font-size: 1.125em;
   font-weight: 700;
   padding-top: 1em;
+  padding-bottom: 0.3em;
 }
 .restaurants__card__bottom p {
   font-size: 1em;
   font-weight: 300;
   padding-bottom: 1em;
+}
+.restaurants__card__bottom button {
+  width: 22px;
+  height: 21px;
+  margin-right: 1em;
+  margin-top: 2em;
+  border: none;
+  background: transparent;
+}
+.restaurants__card__bottom img {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+footer {
+  background: #353535;
+}
+footer img {
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
