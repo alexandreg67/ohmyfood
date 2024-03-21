@@ -211,9 +211,23 @@ header .fleche-retour {
 
 footer {
   background: #353535;
-}
-footer img {
+  padding: 22px 25px;
   color: #FFFFFF;
+}
+footer .text_container {
+  display: flex;
+  flex-direction: column;
+}
+footer menu {
+  padding-top: 1em;
+  list-style-type: none;
+}
+footer menu a {
+  display: inline-block;
+  color: #FFFFFF;
+  font-size: 1em;
+  padding-bottom: 7px;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
