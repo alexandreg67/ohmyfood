@@ -206,7 +206,8 @@ header .fleche-retour {
 .restaurants__card img {
   max-height: 231px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   overflow: hidden;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -304,6 +305,4 @@ footer menu a {
     justify-content: end;
     padding-right: 1.5em;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

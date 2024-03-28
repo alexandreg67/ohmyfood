@@ -32,7 +32,7 @@ header {
         top: 17px;
         height: 30px;
         width: 30px;
-        display: none;
+        display:inline-block;
     }
 }
 
@@ -202,26 +202,26 @@ header {
         display: flex;
         flex-direction: column;
         gap: 1.5em;
+        
+        &__first_line, &__second_line {
 
+            &__lien_menu {
+                width: 100%;
+                text-decoration: none;
+                color: #353535;
+            }
 
-        &__first_line {
-            
             @media (min-width: 375px) {
                 display: flex;
                 gap: 9%;
             }
+
         }
 
-        &__second_line {
-
-            @media (min-width: 375px) {
-                display: flex;
-                gap: 9%;
-            }
-        }
     }
             
     &__card {
+
         position: relative;
         display: flex;
         width: 100%;
@@ -289,7 +289,26 @@ header {
         }
      
     }   
+
+    &__details_menu {
+
+        background-color: #F3F3F3;
+        img {
+            height: 275px;
+        }  
+        
+        h1 {
+            font-size: 1.75em;
+            font-weight: 400;
+            font-style: oblique;
+            color: #101010;
+            display: flex;
+            justify-content: center;
+        }
+    }
 }
+
+
 
 footer {
     background: #353535;
