@@ -116,7 +116,7 @@ header .fleche-retour {
   margin: 0 auto;
 }
 .fonctionnement__text-container h3 {
-  width: 90%;
+  width: 100%;
   text-align: left;
   font-weight: 700;
   font-size: 1.5em;
@@ -232,8 +232,7 @@ header .fleche-retour {
 .restaurants__card img {
   max-height: 231px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   overflow: hidden;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -273,8 +272,7 @@ header .fleche-retour {
 .restaurants__details_menu img {
   width: 100%;
   height: 275px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .restaurants__details_menu h1 {
   padding-top: 1.75em;
@@ -295,7 +293,7 @@ header .fleche-retour {
 }
 
 main {
-  background-color: #F6F6F6;
+  background-color: #FFFFFF;
 }
 
 .restaurant {
@@ -320,8 +318,7 @@ main {
 .restaurant__imgage {
   width: 100%;
   height: 275px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .restaurant menu li {
   list-style-type: none;
@@ -448,6 +445,11 @@ footer menu li a i {
   width: 12px;
 }
 @media (min-width: 375px) {
+  footer menu li a i {
+    margin-left: 1em;
+  }
+}
+@media (min-width: 375px) {
   footer menu li a {
     flex-direction: row-reverse;
     align-items: center;
@@ -468,4 +470,6 @@ footer menu li a i {
     justify-content: end;
     padding-right: 1.5em;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
