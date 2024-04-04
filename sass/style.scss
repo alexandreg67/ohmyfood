@@ -107,15 +107,17 @@ header {
 }
 
 .fonctionnement {
-    // max-width: 1080px;
     margin: 0 auto;
     // height: 440px;
     background-color: #FFFFFF;
     padding: 3rem 0;
 
     &__text-container{
+        width: 90%;
+        max-width: 1080px;
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
 
         h3 {
             width: 90%;

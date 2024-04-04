@@ -92,8 +92,11 @@ header .fleche-retour {
   padding: 3rem 0;
 }
 .fonctionnement__text-container {
+  width: 90%;
+  max-width: 1080px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 .fonctionnement__text-container h3 {
   width: 90%;
