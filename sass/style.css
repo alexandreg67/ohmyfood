@@ -232,8 +232,7 @@ header .fleche-retour {
 .restaurants__card img {
   height: 231px;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   overflow: hidden;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -261,7 +260,6 @@ header .fleche-retour {
   justify-content: center;
 }
 .restaurants__card__bottom__card-heart i {
-  color: red;
   font-size: 1.5em;
 }
 .restaurants__details_menu {
@@ -270,8 +268,7 @@ header .fleche-retour {
 .restaurants__details_menu img {
   width: 100%;
   height: 275px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .restaurants__details_menu h1 {
   padding-top: 1.75em;
@@ -286,6 +283,7 @@ header .fleche-retour {
   list-style-type: none;
 }
 .restaurants__details_menu__separateur {
+  margin-top: 9px;
   width: 40px;
   height: 3px;
   background-color: #99E2D0;
@@ -311,34 +309,56 @@ main {
   position: relative;
 }
 .restaurant__titre-menu {
-  width: 90%;
+  display: flex;
   font-family: "Shrikhand", sans-serif;
-  font-size: 28px;
+  font-size: 1em;
   font-weight: 400;
-  text-align: left;
+  justify-content: left;
   color: #101010;
+  gap: 1em;
+}
+@media (min-width: 375px) {
+  .restaurant__titre-menu {
+    justify-content: center;
+  }
 }
 .restaurant__imgage {
   width: 100%;
   height: 275px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   position: absolute;
   left: 0;
   top: 4.5em;
 }
+.restaurant menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .restaurant menu li {
   list-style-type: none;
   margin-bottom: 0.5em;
+  width: 100%;
+}
+@media (min-width: 375px) {
+  .restaurant menu li {
+    width: 80%;
+  }
 }
 .restaurant__titre {
-  align-items: center;
+  width: 100%;
   padding-top: 1em;
   font-weight: 300;
+}
+@media (min-width: 375px) {
+  .restaurant__titre {
+    width: 80%;
+  }
 }
 .restaurant__separateur {
   border: 3px solid #99E2D0;
   margin-bottom: 1em;
+  margin-top: 9px;
   width: 40px;
 }
 .restaurant__btn {
@@ -355,7 +375,7 @@ main {
   overflow: hidden;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
 }
-.restaurant__btn:active .check {
+.restaurant__btn:hover .check {
   width: 60px;
 }
 .restaurant__btn__text-container {
@@ -476,4 +496,6 @@ footer menu li a i {
     justify-content: end;
     padding-right: 1.5em;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

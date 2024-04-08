@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-//   border: 2px solid red;
 }
 
 $text-color: #353535;
@@ -21,7 +20,6 @@ header {
     display: flex;
     width: 100%;
     padding: 1em 0;
-    // height: 63px;
     justify-content: center;
     align-items: center;
     background-color: #FFFFFF;
@@ -74,15 +72,12 @@ header {
             margin-top: 39px;
             text-align:center;
             padding: 0 50px 20px;
-            // width: 275px;
-            // height: 68px;
             font-size: 24px;
             font-weight: 700;
         }
 
         h2 {
             text-align: center;
-            // width: 315px;
             padding: 0 1.5em;
             font-size: 1.125em;
             font-weight: 300;
@@ -125,7 +120,6 @@ header {
 
 .fonctionnement {
     margin: 0 auto;
-    // height: 440px;
     background-color: #FFFFFF;
     padding: 3rem 0;
 
@@ -159,7 +153,6 @@ header {
             border-radius: 20px;
             list-style-type: none;
             margin-bottom: 25px;
-            // margin-right: 1em;
             position: relative;
         }
 
@@ -185,7 +178,6 @@ header {
             font-weight: 500;
             margin-left: 12.51px;
             padding: 1.75em;
-            // height: 72.38px;
             width: 100%;
             max-width: 322.49px;
             border: none;
@@ -199,7 +191,6 @@ header {
                 top: 50%;
                 transform: translateY(-50%);
                 color: #7E7E7E;
-                ;
             }
         }
 
@@ -229,27 +220,20 @@ header {
     &__list {
         display: flex;
         flex-direction: row;
-        // flex-direction: column;
         flex-wrap: wrap;
         gap: 1.5em;
         
-        // &__first_line, &__second_line {
+        &__lien_menu {
+            width: calc(50% - 0.75em);
+            text-decoration: none;
+            color: #353535;
+        }
 
+        @media (min-width: 375px) {
+            display: flex;
+            // gap: 9%;
 
-            &__lien_menu {
-                width: calc(50% - 0.75em);
-                text-decoration: none;
-                color: #353535;
-            }
-
-            @media (min-width: 375px) {
-                display: flex;
-                // gap: 9%;
-
-            }
-
-        // }
-
+        }
     }
             
     &__card {
@@ -310,7 +294,7 @@ header {
                 justify-content: center;
 
                 i {
-                    color: red;
+                    // color: red;
                     font-size: 1.5em;
                 }
 
@@ -345,6 +329,7 @@ header {
         }
 
         &__separateur {
+            margin-top: 9px;
             width: 40px;
             height: 3px;
             background-color: #99E2D0 
@@ -374,17 +359,20 @@ main {
     max-width: 1055px;
     margin: 0 auto;
     position: relative;
-    // top: -40px;
-    // height: calc(100% - 40px);
 
     &__titre-menu {
-        width: 90%;
-        // margin: 0 auto;
+        display: flex;
+        // width: 90%;
         font-family: "Shrikhand", sans-serif;
-        font-size: 28px;
+        font-size: 1em;
         font-weight: 400;
-        text-align: left;
+        justify-content: left;
         color: #101010;
+        gap: 1em;
+
+        @media (min-width: 375px){
+            justify-content: center;
+        }
     }
 
     &__imgage {
@@ -397,21 +385,35 @@ main {
     }
 
     menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
         li {
             list-style-type: none;  
             margin-bottom: 0.5em;
+            width: 100%;
+
+            @media (min-width: 375px){
+                width: 80%;
+            }
         }
     }
 
     &__titre {
-        align-items: center;
+        width: 100%;
         padding-top: 1em;
         font-weight: 300;
+
+        @media (min-width: 375px){
+            width: 80%;
+        }
     }
 
     &__separateur {
         border: 3px solid  #99E2D0;
         margin-bottom: 1em;
+        margin-top: 9px;
         width: 40px;
     }
 
@@ -429,9 +431,8 @@ main {
         overflow: hidden;
         box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px #0000001A;
     
-        &:active{
+        &:hover{
             .check{
-                // transform: translateX(0px);
                 width: 60px;
             }
         }
@@ -439,7 +440,6 @@ main {
         &__text-container{
           display: flex;
           width: 100%;
-        //   gap:1em;
           justify-content: space-between;
           text-align: left;
         }
@@ -462,7 +462,6 @@ main {
         &__price{
             padding-right: 1em;
             display: flex;
-            // height: 100%;
             align-items: end;
         }
         
@@ -474,7 +473,6 @@ main {
             align-items: center;
             width: 0px;
             height: 70px;
-            // transform: translateX(100%);
             overflow: hidden;
             transition: all 0.3s;
             border-radius: 0 15px 15px 0;
@@ -569,8 +567,5 @@ footer {
         align-items: center;
         justify-content: end;
         padding-right: 1.5em;
-        
     }
-
-    
 }
