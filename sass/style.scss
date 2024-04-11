@@ -12,7 +12,7 @@ $text-color: #353535;
 
 .loader {
     position: fixed;
-    background: #0009;
+    background: #FFFFFF;
     width: 100vw;
     height: 100vh;
     z-index: 1000;
@@ -473,7 +473,32 @@ main {
         top: 4.5em;
     }
 
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @mixin animateMenu($delay) {
+        animation: fadeIn 1s ease-out $delay forwards;
+        opacity: 0;
+    }
+
     menu {
+
+        &:nth-of-type(1) {
+            @include animateMenu(0.5s);
+        }
+        &:nth-of-type(2) {
+            @include animateMenu(1s); 
+        }
+        &:nth-of-type(3) {
+            @include animateMenu(1.5s); 
+        }
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -530,21 +555,31 @@ main {
         }
         
         &__text-container{
-          display: flex;
-          width: 100%;
-          justify-content: space-between;
-          text-align: left;
+            flex-grow: 1;
+            overflow: hidden;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            text-align: left;
         }
         
         &__plate{
+            flex-grow: 1;
             display: flex;
             flex-direction: column;
             padding-left: 0.5em;
+            overflow: hidden;
+
+            h3, h4 {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis; 
+            }
 
             h3 {
                 font-size: 1.125em;
             }
-
+            
             h4 {
                 font-weight: 300;
                 font-size: 1em;
@@ -553,8 +588,10 @@ main {
         
         &__price{
             padding-right: 1em;
+            padding-left: 1em;
             display: flex;
             align-items: end;
+            flex-shrink: 0;
         }
         
         .check{
@@ -569,7 +606,8 @@ main {
             transition: all 0.3s;
             border-radius: 0 15px 15px 0;
         }
-      }
+    }
+
     &__commander {
         
         display: flex;
