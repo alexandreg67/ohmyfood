@@ -255,6 +255,12 @@ header {
                 transform: translateY(-50%);
                 color: #7E7E7E;
             }
+
+            &:hover {
+                i {
+                    color: #9356DC;
+                }
+            }
         }
 
         @media (min-width: 1224px){
@@ -355,6 +361,7 @@ header {
         .new {
             display: inline-block;
             color: #008766;
+            border-radius: 2px;
             background-color: #99E2D0;
             width: 80px;
             height: 30px;

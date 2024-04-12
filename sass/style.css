@@ -227,6 +227,9 @@ header .fleche-retour {
   transform: translateY(-50%);
   color: #7E7E7E;
 }
+.fonctionnement__menu button:hover i {
+  color: #9356DC;
+}
 @media (min-width: 1224px) {
   .fonctionnement__menu {
     display: flex;
@@ -309,6 +312,7 @@ header .fleche-retour {
 .restaurants__card .new {
   display: inline-block;
   color: #008766;
+  border-radius: 2px;
   background-color: #99E2D0;
   width: 80px;
   height: 30px;
