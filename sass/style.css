@@ -182,11 +182,15 @@ header .fleche-retour {
 .fonctionnement__menu li {
   width: 100%;
   height: 72.38px;
-  max-width: 335px;
   border-radius: 20px;
   list-style-type: none;
   margin-bottom: 25px;
   position: relative;
+}
+@media (min-width: 1224px) {
+  .fonctionnement__menu li {
+    width: 335px;
+  }
 }
 .fonctionnement__menu__number {
   z-index: 1;
@@ -209,8 +213,8 @@ header .fleche-retour {
   font-weight: 500;
   margin-left: 12.51px;
   padding: 1.75em;
+  width: 322.5px;
   width: 100%;
-  max-width: 322.49px;
   border: none;
   border-radius: 20px;
   background-color: #F6F6F6;
@@ -223,10 +227,11 @@ header .fleche-retour {
   transform: translateY(-50%);
   color: #7E7E7E;
 }
-@media (min-width: 375px) {
+@media (min-width: 1224px) {
   .fonctionnement__menu {
-    flex-direction: row;
+    display: flex;
     justify-content: space-between;
+    flex-direction: row;
   }
 }
 
@@ -280,7 +285,7 @@ header .fleche-retour {
   opacity: 1;
   transform: translateY(0);
 }
-@media (min-width: 375px) {
+@media (min-width: 768px) {
   .restaurants__list {
     display: flex;
     flex-direction: row;
@@ -597,16 +602,16 @@ footer menu li a i {
     align-items: center;
   }
 }
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 868px) {
   footer menu {
     display: flex;
     flex-direction: row;
-    padding-top: 0;
   }
 }
 @media screen and (min-width: 375px) {
   footer {
     display: flex;
+    justify-content: space-between;
     flex-direction: row-reverse;
     align-items: flex-end;
     padding-right: 1.5em;

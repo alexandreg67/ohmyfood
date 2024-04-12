@@ -208,11 +208,15 @@ header {
         li {
             width: 100%;
             height: 72.38px;
-            max-width: 335px;
+            // width: 335px;
             border-radius: 20px;
             list-style-type: none;
             margin-bottom: 25px;
             position: relative;
+
+            @media (min-width: 1224px){
+                width: 335px;
+            }
         }
 
         &__number {
@@ -237,8 +241,8 @@ header {
             font-weight: 500;
             margin-left: 12.51px;
             padding: 1.75em;
+            width: 322.5px;
             width: 100%;
-            max-width: 322.49px;
             border: none;
             border-radius: 20px;
             background-color: #F6F6F6;
@@ -253,10 +257,12 @@ header {
             }
         }
 
-        @media (min-width: 375px){
-            flex-direction: row;
+        @media (min-width: 1224px){
+            display: flex;
             justify-content: space-between;
+            flex-direction: row;
         }
+
     }
 }
 
@@ -322,7 +328,7 @@ header {
         }
         
         
-        @media (min-width: 375px) {
+        @media (min-width: 768px) {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -689,15 +695,16 @@ footer {
             }
         }
 
-        @media screen and (min-width: 375px) {
+        @media screen and (min-width: 868px) {
             display: flex;
             flex-direction: row;
-            padding-top: 0;
+            // padding-top: 0;
         }
     }
 
     @media screen and (min-width: 375px) {
         display: flex;
+        justify-content: space-between;
         flex-direction: row-reverse;
         align-items: flex-end;  
         padding-right: 1.5em;
