@@ -500,7 +500,7 @@ main {
         opacity: 0;
     }
 
-    menu {
+    ul {
 
         &:nth-of-type(1) {
             @include animateMenu(0.5s);
@@ -594,6 +594,16 @@ main {
             }
             
             h4 {
+                font-weight: 300;
+                font-size: 1em;
+            }
+
+            &__title {
+                font-size: 1.125em;
+                font-weight: 700;
+            }
+
+            &__subtitle {
                 font-weight: 300;
                 font-size: 1em;
             }

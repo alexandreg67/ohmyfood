@@ -425,30 +425,30 @@ main {
     opacity: 1;
   }
 }
-.restaurant menu {
+.restaurant ul {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.restaurant menu:nth-of-type(1) {
+.restaurant ul:nth-of-type(1) {
   animation: fadeIn 1s ease-out 0.5s forwards;
   opacity: 0;
 }
-.restaurant menu:nth-of-type(2) {
+.restaurant ul:nth-of-type(2) {
   animation: fadeIn 1s ease-out 1s forwards;
   opacity: 0;
 }
-.restaurant menu:nth-of-type(3) {
+.restaurant ul:nth-of-type(3) {
   animation: fadeIn 1s ease-out 1.5s forwards;
   opacity: 0;
 }
-.restaurant menu li {
+.restaurant ul li {
   list-style-type: none;
   margin-bottom: 0.5em;
   width: 100%;
 }
 @media (min-width: 375px) {
-  .restaurant menu li {
+  .restaurant ul li {
     width: 80%;
   }
 }
@@ -511,6 +511,14 @@ main {
   font-size: 1.125em;
 }
 .restaurant__btn__plate h4 {
+  font-weight: 300;
+  font-size: 1em;
+}
+.restaurant__btn__plate__title {
+  font-size: 1.125em;
+  font-weight: 700;
+}
+.restaurant__btn__plate__subtitle {
   font-weight: 300;
   font-size: 1em;
 }
