@@ -233,6 +233,7 @@ header .fleche-retour {
   border-radius: 20px;
   background-color: #F6F6F6;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  cursor: pointer;
 }
 .fonctionnement__menu button i {
   position: absolute;
