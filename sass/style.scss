@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-span {
-    font-family: 'Roboto', sans-serif;
-}
-
 $primary-color: #9356dc;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
@@ -82,6 +78,10 @@ $text-color: #353535;
       visibility: visible;
     }
   }
+
+span {
+    font-family: 'Roboto', sans-serif;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -254,6 +254,7 @@ header {
 
             i {
                 position: absolute;
+                font-size: 1.4em;
                 left: 40px;
                 top: 50%;
                 transform: translateY(-50%);
@@ -304,37 +305,50 @@ header {
             position: relative;
 
             .btn-heart {
-                position: absolute;
-                right: 2.5em;
-                bottom: 3.5em;
-                width: 22px; 
-                height: 21px; 
+                font-family: 'roboto', sans-serif;
+                position: absolute; 
+                font-size: 1.8em;   
+                right: 1em;
+                bottom: 1em;
+                width: 1.8em;      
+                height: 1.4em;      
                 overflow: hidden;
                 border: none;
                 background: none;
-                padding: 0;
-              
-                img {
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-                  width: 100%;
-                  height: 100%;
-                  transition: transform 0.2s ease, opacity 0.2s ease;
+                cursor: pointer;
+
+                .fa-heart {
+                    position: absolute; 
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%; 
+                    overflow: hidden;
+                }
+            
+                .fa-solid {
+                    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    position: absolute;
+                    bottom: 100%; 
+                    height: 100%; 
+                    overflow: hidden; 
+                    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%); 
+                    transition: clip-path 0.4s;
                 }
               
-                .__icon-couleur {
-                  transform: translateY(100%);
-                  opacity: 0;
-                }
-              
-                &:active {              
-                  .__icon-couleur {
-                    opacity: 1;
-                    transform: translateY(0);
-                  }
-                }
-              } 
+                &:active .fa-solid {
+                    bottom: 0;
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                }    
+                &:not(:active) .fa-solid {
+                    bottom: 0;
+                    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%); 
+                    transition: clip-path 0.4s; 
+                }           
+                
+            } 
         }
         
         
@@ -591,11 +605,13 @@ main {
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis; 
+                padding-left: 15px;
             }
 
             &__title {
                 font-size: 1.125em;
                 font-weight: 700;
+                padding-bottom: 5px;
             }
 
             &__subtitle {

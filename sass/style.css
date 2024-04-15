@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-span {
-  font-family: "Roboto", sans-serif;
-}
-
 .loader {
   position: fixed;
   background: #FFFFFF;
@@ -70,6 +66,10 @@ span {
     visibility: visible;
   }
 }
+span {
+  font-family: "Roboto", sans-serif;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -226,6 +226,7 @@ header .fleche-retour {
 }
 .fonctionnement__menu button i {
   position: absolute;
+  font-size: 1.4em;
   left: 40px;
   top: 50%;
   transform: translateY(-50%);
@@ -266,31 +267,45 @@ header .fleche-retour {
   text-decoration: none;
 }
 .restaurants__list__lien_menu .btn-heart {
+  font-family: "roboto", sans-serif;
   position: absolute;
-  right: 2.5em;
-  bottom: 3.5em;
-  width: 22px;
-  height: 21px;
+  font-size: 1.8em;
+  right: 1em;
+  bottom: 1em;
+  width: 1.8em;
+  height: 1.4em;
   overflow: hidden;
   border: none;
   background: none;
-  padding: 0;
+  cursor: pointer;
 }
-.restaurants__list__lien_menu .btn-heart img {
+.restaurants__list__lien_menu .btn-heart .fa-heart {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  overflow: hidden;
 }
-.restaurants__list__lien_menu .btn-heart .__icon-couleur {
-  transform: translateY(100%);
-  opacity: 0;
+.restaurants__list__lien_menu .btn-heart .fa-solid {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  bottom: 100%;
+  height: 100%;
+  overflow: hidden;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transition: clip-path 0.4s;
 }
-.restaurants__list__lien_menu .btn-heart:active .__icon-couleur {
-  opacity: 1;
-  transform: translateY(0);
+.restaurants__list__lien_menu .btn-heart:active .fa-solid {
+  bottom: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.restaurants__list__lien_menu .btn-heart:not(:active) .fa-solid {
+  bottom: 0;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  transition: clip-path 0.4s;
 }
 @media (min-width: 768px) {
   .restaurants__list {
@@ -510,10 +525,12 @@ main {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-left: 15px;
 }
 .restaurant__btn__plate__title {
   font-size: 1.125em;
   font-weight: 700;
+  padding-bottom: 5px;
 }
 .restaurant__btn__plate__subtitle {
   font-weight: 300;
