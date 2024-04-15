@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+span {
+  font-family: "Roboto", sans-serif;
+}
+
 .loader {
   position: fixed;
   background: #FFFFFF;
@@ -502,17 +506,10 @@ main {
   padding-left: 0.5em;
   overflow: hidden;
 }
-.restaurant__btn__plate h3, .restaurant__btn__plate h4 {
+.restaurant__btn__plate__title, .restaurant__btn__plate__subtitle {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-.restaurant__btn__plate h3 {
-  font-size: 1.125em;
-}
-.restaurant__btn__plate h4 {
-  font-weight: 300;
-  font-size: 1em;
 }
 .restaurant__btn__plate__title {
   font-size: 1.125em;

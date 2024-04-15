@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+span {
+    font-family: 'Roboto', sans-serif;
+}
+
 $primary-color: #9356dc;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
@@ -583,19 +587,10 @@ main {
             padding-left: 0.5em;
             overflow: hidden;
 
-            h3, h4 {
+            &__title, &__subtitle {
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis; 
-            }
-
-            h3 {
-                font-size: 1.125em;
-            }
-            
-            h4 {
-                font-weight: 300;
-                font-size: 1em;
             }
 
             &__title {
