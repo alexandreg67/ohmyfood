@@ -133,7 +133,7 @@ header {
     }
 
     input::placeholder {
-        color: #353535;
+        color: black;
         font-weight: 700;
         font-size: 1em;
     }
@@ -318,7 +318,7 @@ header {
             position: relative;
 
             .btn-heart {
-                font-family: 'roboto', sans-serif;
+                // font-family: 'roboto', sans-serif;
                 position: absolute; 
                 font-size: 1.8em;   
                 right: 1em;

@@ -115,7 +115,7 @@ header .fleche-retour {
   border: none;
 }
 .location input::placeholder {
-  color: #353535;
+  color: black;
   font-weight: 700;
   font-size: 1em;
 }
@@ -278,7 +278,6 @@ header .fleche-retour {
   text-decoration: none;
 }
 .restaurants__list__lien_menu .btn-heart {
-  font-family: "roboto", sans-serif;
   position: absolute;
   font-size: 1.8em;
   right: 1em;
